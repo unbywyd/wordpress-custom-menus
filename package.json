@@ -1,0 +1,11 @@
+{
+  "name": "unbywyd-custom-menus",
+  "version": "1.0.0",
+  "description": "custom menus for wordpress cms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "unbywyd",
+  "license": "ISC"
+}

@@ -1,0 +1,10 @@
+<li>
+    <a href="{{url}}" target="{{target}}" class="{{class}}">{{title}}</a>
+    {{#if children}}
+        <ul>
+            {{#each children}}         
+                {{>menu_item}}
+            {{/each}}
+        </ul>
+    {{/if}}
+</li>

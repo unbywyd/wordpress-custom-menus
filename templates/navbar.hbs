@@ -1,0 +1,17 @@
+{{!-- You can use {{{debug}}} helper to see the incoming data --}}
+
+<nav class="main-nav {{class}}" id="navbar">                      
+    <ul class="menu">                  	
+        {{#each menu}}
+        <li {{#if children}}class="has-children"{{/if}}><a href="{{url}}" target="{{target}}" {{#if children}}aria-haspopup="true" aria-expanded="false"{{/if}} class="pop {{class}}">{{title}}</a>
+        {{#if children}}
+            <ul class="submenu">
+                {{#each children}}
+                    {{>menu_item}}
+                {{/each}}
+            </ul>
+        {{/if}}
+        </li>
+        {{/each}}
+    </ul>
+</nav>
