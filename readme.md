@@ -1,4 +1,6 @@
-# Custom render wordpress menu by menu location 
+# Custom render wordpress menu from custom menu locations
+:bangbang: | > This is a mini plugin for wordress,but to facilitate the task and a clearer presentation, the handlebars template engine will be used
+:---: | :---
 
 ## About permalinks
 In WordPress, links are **permalinks**:
@@ -226,12 +228,12 @@ Then you can customize the menus in the admin panel and add them to your locatio
 and now you can display your menu anywhere in the post using a shortcode:
 
 ```php
-    [use_custom_menu location="navbar" customparam="test" class="test"]
+[use_custom_menu location="navbar" customparam="test" class="test"]
 ```
 
 You will also be able to display it programmatically using php:
 
 ```php
-    <php print do_shortcode('[use_custom_menu location="navbar" customparam="test" class="test"]'); ?>
+<php print do_shortcode('[use_custom_menu location="navbar" customparam="test" class="test"]'); ?>
 ```
 
